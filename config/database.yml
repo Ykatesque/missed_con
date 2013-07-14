@@ -1,5 +1,5 @@
 # PostgreSQL. Versions 8.2 and up are supported.
-#
+#rails generate model Post title:string summary:text url:string published_at:datetime guid:string
 # Install the pg driver:
 #   gem install pg
 # On Mac OS X with macports:
@@ -17,8 +17,9 @@ development:
   encoding: unicode
   database: missed_con_development
   pool: 5
-  username: missed_con
+  username: Ykat
   password:
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +44,15 @@ test:
   encoding: unicode
   database: missed_con_test
   pool: 5
-  username: missed_con
+  username: Ykat
   password:
+  host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
   database: missed_con_production
   pool: 5
-  username: missed_con
+  username: Ykat
   password:
+  host: localhost

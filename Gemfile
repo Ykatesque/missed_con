@@ -15,6 +15,7 @@ group :development do
   gem 'meta_request'
   gem 'binding_of_caller'
   gem 'shoulda-matchers'
+  gem 'pauldix-feedzirra'
 end
 
 group :test, :development do
